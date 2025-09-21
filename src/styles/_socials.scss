@@ -1,0 +1,23 @@
+@use '../styles/abstracts/index' as *;
+
+.social-container {
+  position: fixed;
+  bottom: 40px;
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  background: $secondary-background;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.social-container a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-container a:hover {
+  color: #007bff;
+}

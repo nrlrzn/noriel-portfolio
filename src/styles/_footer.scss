@@ -1,0 +1,86 @@
+@use '../styles/abstracts/index' as *;
+
+.footer {
+  background: $primary-background;
+  color: $text-light;
+  padding: 3rem 1.5rem;
+  font-family: $font-main;
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $text-white;
+  }
+
+  .credits {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: $text-dark;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: $text-white;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 0.4rem 0;
+
+      a {
+        color: $text-light;
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $text-white;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    margin-top: 0.8rem;
+
+    a {
+      margin-right: 1rem;
+      color: $text-light;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $text-white;
+      }
+    }
+  }
+
+  .footer-cta {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $secondary-background;
+    text-align: center;
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $text-light;
+    }
+  }
+}

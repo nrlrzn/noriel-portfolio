@@ -1,0 +1,108 @@
+@use '../styles/abstracts/index' as *;
+
+.skills {
+  background: $secondary-background;
+  min-height: 100vh;
+  color: $text-white;
+  font-family: Archivo, sans-serif;
+
+  .skills-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      width: 60px;
+      height: 4px;
+      background-color: $text-name;
+      margin: 0 auto 30px auto;
+      border-radius: 2px;
+    }
+
+    .skills-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      text-align: left;
+      margin-bottom: 60px;
+
+      .skills-img {
+        flex: 0 0 150px;
+        height: 150px;
+        background: transparent;
+        border: 3px solid #fff;
+        position: relative;
+        display: block;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: calc(100% - 10px);
+          height: calc(100% - 10px);
+          border: 1px solid #fff;
+          z-index: -1;
+        }
+      }
+
+      .skills-text {
+        flex: 1;
+        max-width: 500px;
+
+        p {
+          line-height: 1.7;
+          font-size: 1rem;
+          margin-bottom: 0;
+          color: #ddd;
+        }
+      }
+    }
+    .skills-item-row {
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+
+      .skills-set {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .skills-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        background: $primary-background;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        width: 100%;
+        max-width: 200px;
+      }
+
+      .skills-item:hover {
+        transform: translateY(-6px);
+      }
+
+      .item {
+        font-size: 15px;
+        font-weight: 600;
+        color: $text-white;
+      }
+    }
+  }
+}
