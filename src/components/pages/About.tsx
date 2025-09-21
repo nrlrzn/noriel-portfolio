@@ -6,7 +6,11 @@ function About() {
         <div className="underline"></div>
 
         <div className="about-content">
-          <img src="src/assets/about-avatar.png" alt="" className="about-img" />
+          <img
+            src="/about-avatar.png"
+            alt="About avatar"
+            className="about-img"
+          />
 
           <div className="about-text">
             <p className="paragraph">

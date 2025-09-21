@@ -12,11 +12,7 @@ export default function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero-content">
-        <img
-          src="src/assets/hero-avatar.png"
-          alt="Noriel"
-          className="hero-img"
-        />
+        <img src="/hero-avatar.png" alt="Hero avatar" className="hero-img" />
 
         <div className="hero-text">
           <h1>

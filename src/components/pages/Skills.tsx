@@ -11,7 +11,7 @@ function Skills() {
 
           <div className="skills-content">
             <img
-              src="src/assets/Noriel_Logo.png"
+              src="/Noriel_Logo.png"
               alt="Noriel Logo"
               className="skills-img"
             />
