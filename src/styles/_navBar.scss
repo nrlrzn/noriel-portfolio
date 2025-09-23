@@ -8,19 +8,19 @@
   transform: translateX(-50%);
   width: 100%;
   z-index: 1000;
+  font-family: $font-main;
 
   .navbar {
     height: 5vh;
     width: 75%;
     background: $background-light;
-    box-shadow: $box-shadow;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 4rem;
-    transition: transform 0.3s ease-in-out;
     border-radius: 60px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 
     .navbar-logo {
       display: flex;
@@ -28,7 +28,7 @@
       gap: 0.5rem;
 
       .logo-img {
-        height: 100px;
+        height: 80px;
         width: auto;
       }
 
@@ -52,18 +52,75 @@
           color: $text-black;
           text-decoration: none;
         }
-        .icon {
-          color: $text-black;
-        }
+      }
+    }
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+
+      span {
+        width: 25px;
+        height: 0;
+        background: $text-black;
+        border-radius: 2px;
+        transition: 0.5s;
       }
     }
   }
 
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    background: $primary-background;
+    color: $text-white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    transition: right 0.3s ease-in-out;
+
+    &.open {
+      right: 0;
+    }
+
+    a {
+      margin: 1.5rem 0;
+      color: $text-white;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: color 0.2s;
+      gap: 1rem;
+
+      .icon {
+        padding-right: 10px;
+      }
+    }
+  }
   .navbar-hide {
     transform: translateY(-150%);
   }
 
   .navbar-show {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    .navbar {
+      width: 95%;
+      padding: 0.5rem 1rem;
+
+      .navbar-menu {
+        display: none;
+      }
+
+      .burger {
+        display: flex;
+      }
+    }
   }
 }

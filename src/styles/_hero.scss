@@ -3,13 +3,24 @@
 .hero {
   @include flex-center;
   height: 100vh;
-
   position: relative;
   font-family: $font-main;
 
   .hero-content {
     display: flex;
     align-items: center;
+    gap: 2rem;
+
+    /* 📱 Tablet */
+    @media (max-width: 1024px) {
+      gap: 1.5rem;
+    }
+
+    /* 📱 Mobile */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   .hero-img {
@@ -27,6 +38,13 @@
       height: 100%;
       z-index: -1;
     }
+
+    /* scale down for small screens */
+    @media (max-width: 768px) {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 1.5rem;
+    }
   }
 
   .hero-text {
@@ -42,12 +60,21 @@
       span {
         color: $text-name;
       }
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
     }
 
     p {
       font-size: 1.25rem;
       color: $text-white;
       margin: 0 0 1.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -69,6 +96,15 @@
         background: darken($primary-background, 5%);
       }
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+
+      .btn-primary {
+        width: 100%;
+      }
+    }
   }
 
   .arrow-down {
@@ -79,5 +115,9 @@
     font-size: 1rem;
     color: $text-white;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      bottom: 2rem;
+    }
   }
 }

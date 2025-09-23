@@ -13,6 +13,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 
+    /* 📱 Tablet */
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    /* 📱 Mobile */
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       text-align: center;
@@ -67,6 +73,10 @@
 
       &:hover {
         color: $text-white;
+      }
+
+      @media (max-width: 768px) {
+        margin: 0 0.5rem;
       }
     }
   }

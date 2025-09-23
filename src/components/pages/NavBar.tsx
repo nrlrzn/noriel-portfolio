@@ -6,6 +6,8 @@ import {
   AppstoreOutlined,
   ToolOutlined,
   MailOutlined,
+  MenuOutlined,
+  CloseOutlined,
 } from '@ant-design/icons';
 
 const items = [
@@ -39,6 +41,7 @@ const items = [
 export default function NavBar() {
   const [showNav, setShowNav] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -62,14 +65,32 @@ export default function NavBar() {
         <div className="navbar-logo">
           <img src="/Noriel_Logo.png" alt="Noriel Logo" className="logo-img" />
         </div>
-
         <Menu
           mode="horizontal"
           items={items}
           className="navbar-menu"
           selectable={false}
         />
+        <div className="burger" onClick={() => setOpenMenu(true)}>
+          <MenuOutlined style={{ fontSize: '1.5rem' }} />
+        </div>
       </header>
+
+      <div className={`mobile-menu ${openMenu ? 'open' : ''}`}>
+        <div className="close-btn" onClick={() => setOpenMenu(false)}>
+          <CloseOutlined style={{ fontSize: '1.5rem' }} />
+        </div>
+
+        {items.map((item) => (
+          <a
+            key={item.key}
+            href={item.label.props.href}
+            onClick={() => setOpenMenu(false)}
+          >
+            {item.icon} {item.label.props.children}
+          </a>
+        ))}
+      </div>
     </div>
   );
 }

@@ -66,6 +66,7 @@
         }
       }
     }
+
     .skills-item-row {
       justify-content: center;
       gap: 40px;
@@ -102,6 +103,52 @@
         font-size: 15px;
         font-weight: 600;
         color: $text-white;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    .skills-section {
+      padding: 40px 15px;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .skills-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+
+        .skills-img {
+          width: 150px;
+          height: 120px;
+        }
+
+        .skills-text {
+          max-width: 100%;
+
+          p {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .skills-item-row {
+        gap: 20px;
+        margin-top: 30px;
+
+        .skills-set {
+          grid-template-rows: 2fr;
+        }
+
+        .skills-item {
+          max-width: 70%;
+          padding: 20px;
+        }
       }
     }
   }
