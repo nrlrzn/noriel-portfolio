@@ -60,11 +60,7 @@ export default function NavBar() {
     <div className="navbar-container">
       <header className={`navbar ${showNav ? 'navbar-show' : 'navbar-hide'}`}>
         <div className="navbar-logo">
-          <img
-            src="src/assets/Noriel_Logo.png"
-            alt="Noriel Logo"
-            className="logo-img"
-          />
+          <img src="/Noriel_Logo.png" alt="Noriel Logo" className="logo-img" />
         </div>
 
         <Menu

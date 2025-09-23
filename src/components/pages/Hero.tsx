@@ -22,7 +22,7 @@ export default function Hero() {
 
           <div className="hero-button">
             <Button type="primary" className="btn-primary">
-              <a href="src/assets/CV - Noriel Razon.pdf" download>
+              <a href="/CV - Noriel Razon.pdf" download>
                 Download CV
               </a>
             </Button>
