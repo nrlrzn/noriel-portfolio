@@ -1,8 +1,8 @@
 @use '../styles/abstracts/index' as *;
 
 .footer {
-  background: $primary-background;
-  color: $text-light;
+  background: var(--primary-background);
+  color: var(--text-color);
   padding: 3rem 1.5rem;
   font-family: $font-main;
 
@@ -13,12 +13,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 
-    /* 📱 Tablet */
     @media (max-width: 1024px) {
       grid-template-columns: 1fr 1fr;
     }
 
-    /* 📱 Mobile */
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
       text-align: center;
@@ -28,19 +26,19 @@
   .footer-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: $text-white;
+    color: var(--text-name);
   }
 
   .credits {
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: $text-dark;
+    color: var(--text-black);
   }
 
   h3 {
     font-size: 1rem;
     margin-bottom: 0.8rem;
-    color: $text-white;
+    color: var(--text-name);
   }
 
   ul {
@@ -51,12 +49,12 @@
       margin: 0.4rem 0;
 
       a {
-        color: $text-light;
+        color: var(--text-color);
         text-decoration: none;
         transition: color 0.2s;
 
         &:hover {
-          color: $text-white;
+          color: var(--text-name);
         }
       }
     }
@@ -67,12 +65,12 @@
 
     a {
       margin-right: 1rem;
-      color: $text-light;
+      color: var(--text-color);
       text-decoration: none;
       transition: color 0.2s;
 
       &:hover {
-        color: $text-white;
+        color: var(--text-name);
       }
 
       @media (max-width: 768px) {
@@ -84,13 +82,13 @@
   .footer-cta {
     margin-top: 2.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid $secondary-background;
+    border-top: 1px solid var(--secondary-background);
     text-align: center;
 
     p {
       font-size: 1.1rem;
       font-weight: 500;
-      color: $text-light;
+      color: var(--text-color);
     }
   }
 }

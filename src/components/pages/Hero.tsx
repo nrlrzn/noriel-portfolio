@@ -1,5 +1,6 @@
 import { Button } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import ThemeToggle from '../ThemeToggle';
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -12,6 +13,9 @@ export default function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero-content">
+        <div className="theme-toggle">
+          <ThemeToggle />
+        </div>
         <img src="/hero-avatar.png" alt="Hero avatar" className="hero-img" />
 
         <div className="hero-text">

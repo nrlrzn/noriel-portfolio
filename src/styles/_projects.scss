@@ -2,13 +2,13 @@
 
 .projects {
   font-family: $font-main;
-  background: $secondary-background;
+  background: var(--secondary-background);
   padding: 4rem 2rem;
   text-align: center;
-  color: $text-white;
+  color: var(--text-color);
 
   .section-title {
-    color: $text-white;
+    color: var(--text-color);
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
@@ -21,8 +21,8 @@
   }
 
   .project-card {
-    color: $text-light;
-    background: $primary-background;
+    color: var(--text-color);
+    background: var(--primary-background);
     border-radius: 16px;
     padding: 1.5rem;
     box-shadow: $box-shadow;
@@ -42,6 +42,7 @@
     h3 {
       font-size: 1.3rem;
       margin: 0.5rem 0;
+      color: var(--text-color);
     }
 
     p {
@@ -57,9 +58,10 @@
         display: inline-block;
         margin: 0.25rem;
         padding: 0.3rem 0.8rem;
-        background: var(--border-color);
+        background: var(--secondary-background);
         border-radius: 20px;
         font-size: 0.8rem;
+        color: var(--text-color);
       }
     }
 

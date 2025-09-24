@@ -20,8 +20,8 @@ const projects = [
     description: 'My personal portfolio built with React + SCSS.',
     tech: ['React', 'SCSS'],
     image: '/portfolio.PNG',
-    demo: '',
-    github: '',
+    demo: 'https://noriel-portfolio.vercel.app/',
+    github: 'https://github.com/nrlrzn/noriel-portfolio',
   },
 ];
 

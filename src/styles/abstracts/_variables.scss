@@ -1,11 +1,37 @@
+// default
 $primary-background: rgb(33, 33, 33);
 $secondary-background: #414040;
-$background-light: #ae0e0ee4;
 $text-dark: #667;
 $text-light: #cfd4db;
 $text-black: #000000;
 $background-light: #f9f9f9e4;
 $text-white: #ffffff;
 $text-name: rgb(82, 82, 228);
+
+// light mdoe
+$primary-background-light: #e4e3e3;
+$secondary-background-light: #d1cccce4;
+$text-dark-light: #333333;
+$text-black-light: #000000;
+$text-name-light: rgb(41, 41, 180);
+
+// common
 $font-main: 'Archivo', sans-serif;
 $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// theme mapping
+[data-theme='dark'] {
+  --primary-background: #{$primary-background};
+  --secondary-background: #{$secondary-background};
+  --text-color: #{$text-light};
+  --text-black: #{$text-black};
+  --text-name: #{$text-name};
+}
+
+[data-theme='light'] {
+  --primary-background: #{$primary-background-light};
+  --secondary-background: #{$secondary-background-light};
+  --color: #{$text-dark-light};
+  --text-black: #{$text-black-light};
+  --text-name: #{$text-name-light};
+}
