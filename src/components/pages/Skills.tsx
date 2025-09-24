@@ -18,12 +18,11 @@ function Skills() {
 
             <div className="skills-text">
               <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent sit amet vestibulum felis. Vivamus facilisis ligula id
-                fringilla gravida. Suspendisse ultricies sollicitudin lacus, et
-                rutrum nunc bibendum sed. Donec tincidunt tellus sed libero
-                ultricies, eu semper enim molestie. Etiam lorem quam, tincidunt
-                nec malesuada eu, interdum nec leo.
+                I enjoy learning new skills like coding, designing, and building
+                apps. Each project teaches me something new. My skills keep
+                growing because I work hard, ask questions, and practice often.
+                With these skills, I can build tools that make life easier. Here
+                are the software tools I use to practice and grow my skills:
               </p>
             </div>
           </div>

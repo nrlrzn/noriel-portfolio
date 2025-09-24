@@ -14,12 +14,10 @@ function About() {
 
           <div className="about-text">
             <p className="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              sit amet vestibulum felis. Vivamus facilisis ligula id fringilla
-              gravida. Suspendisse ultricies sollicitudin lacus, et rutrum nunc
-              bibendum sed. Donec tincidunt tellus sed libero ultricies, eu
-              semper enim molestie. Etiam lorem quam, tincidunt nec malesuada
-              eu, interdum nec leo.
+              Hi, I'm Noriel! I like making apps and websites that people can
+              use every day. I enjoy learning new things and solving problems.
+              My dream is to create fun, helpful tools that make life easier for
+              everyone who uses them.
             </p>
 
             <div className="info-grid">
